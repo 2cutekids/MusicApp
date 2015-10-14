@@ -1,0 +1,44 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list_line_even {
+       background:    #e0f8f8;
+ }
+ 
+ .list_line_odd {
+       background:    #f8b0f8;
+ }
+
+body {
+    background-color: #d0e4fe;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+#songs {
+    width: 95%;
+    border-collapse: collapse;
+    overflow: scroll;
+    height: 75%;
+}
+
+#songs th {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+
+#search_button {
+    display: inline;
+    padding: 5px;
+    text-align: center;
+}
+#search_table th {
+    text-align: left;
+}

@@ -1,0 +1,40 @@
+<h1>Songs</h1>
+
+<div>
+	<table  id="search_table">
+		<thead>
+			<tr>
+				<th>Song Name </th>
+				<th>Albums Name</th>
+				<th>Artist Name</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<%= form_tag songs_path, method: :get do %>
+				<tr>
+					<td><%= text_field_tag 'search[song]', @search.song %></td>
+					<td><%= text_field_tag 'search[album]', @search.album %></td>
+					<td><%= text_field_tag 'search[artist]', @search.artist %></td>
+                    <td><%=submit_tag "Search", id: 'search_button' %></td>
+				<tr>
+			<%end%>
+		</tbody>
+	</table>
+</div>
+<div>
+<table id = "songs">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Album</th>
+      <th>Artist</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <%= render(@songs) if @songs%>
+  </tbody>
+</table>
+</div>
+<br>
